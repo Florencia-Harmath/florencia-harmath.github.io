@@ -6,7 +6,7 @@ body {
   background-color: #333;
   color: black;
   line-height: 1.6;
-  font-size: 15px; 
+  font-size: 16px; 
 }
 
 /* Estilo para el encabezado */
@@ -57,18 +57,18 @@ section {
 }
 
 .welcome-text {
-  max-width: 85%; 
+  max-width: 90%; 
   margin: auto;
 }
 
 .welcome-text h1 {
-  font-size: 1.8em; 
+  font-size: 2em; 
   margin: 0;
   color: #007acc;
 }
 
 .welcome-text p {
-  font-size: .8em; 
+  font-size: 1em; 
   margin: 15px 0; 
   color: white;
 }
@@ -76,7 +76,7 @@ section {
 /* Estilo para la sección Sobre Mí */
 #about {
   background: #fff;
-  padding: 40px 20px; 
+  padding: 40px 20px;
   margin-top: 15px;
   margin-bottom: 50px;
   box-shadow: 0px 0px 10px 10px #fff;
@@ -95,7 +95,7 @@ section {
 
 #about img {
   border-radius: 50%;
-  width: 120px;
+  width: 120px; 
   height: 120px;
   margin-right: 20px;
   object-fit: cover;
@@ -104,7 +104,7 @@ section {
 .about-text {
   max-width: 600px;
   text-align: justify;
-  font-size: .8rem;
+  font-size: 1rem; 
   line-height: 1.4; 
 }
 
@@ -120,7 +120,7 @@ section {
 #skills h2 {
   text-align: center;
   color: #007acc;
-  font-size: 1.3em; 
+  font-size: 1.5em; 
   margin-bottom: 15px; 
 }
 
@@ -140,7 +140,7 @@ section {
 
 .skills-category h3 {
   color: #333;
-  font-size: 1em; 
+  font-size: 1.2em; 
   margin-bottom: 8px; 
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
@@ -170,7 +170,7 @@ section {
 #contact {
   background: #fff;
   box-shadow: 0px 0px 10px 10px #fff;
-  padding: 40px 20px;
+  padding: 40px 20px; 
   max-width: 800px; 
   margin: 30px auto;
   border-radius: 8px;
@@ -180,8 +180,9 @@ section {
 #contact h2 {
   text-align: center;
   color: #007acc;
-  font-size: 1.2em; 
+  font-size: 1.5em; 
   margin-bottom: 15px; 
+  margin-right: 100px;
 }
 
 .contact-container {
@@ -189,8 +190,7 @@ section {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   align-items: center;
-  font-size: .8rem; 
-  margin-left: 0; 
+  font-size: 1rem; 
 }
 
 #contact p,
@@ -220,7 +220,7 @@ footer {
 /* Adaptaciones responsivas */
 @media (max-width: 768px) {
   .skills-container {
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   .skills-category {
@@ -234,7 +234,7 @@ footer {
   }
 
   .welcome-text p {
-    font-size: 0.9em;
+    font-size: 0.9em; 
     margin: 10px 0; 
   }
 
@@ -243,7 +243,7 @@ footer {
   }
 
   .skills-category h3 {
-    font-size: 1.1em;
+    font-size: 1.1em; 
   }
 
   .skills-category ul li {
@@ -251,7 +251,7 @@ footer {
   }
 
   #contact {
-    font-size: 0.9rem;
+    font-size: 0.9rem; 
     padding: 20px; 
   }
 }
