@@ -6,6 +6,7 @@ body {
   background-color: #333;
   color: black;
   line-height: 1.6;
+  font-size: 16px; /* Tamaño base del texto */
 }
 
 /* Estilo para el encabezado */
@@ -36,7 +37,7 @@ nav ul li a {
   font-weight: bold;
   transition: color 0.3s ease;
   font-size: 1.2em;
-  letter-spacing: 1PX;
+  letter-spacing: 1px; /* Ajuste: 'px' en minúsculas */
 }
 
 nav ul li a:hover {
@@ -56,26 +57,26 @@ section {
 }
 
 .welcome-text {
-  max-width: 800px;
+  max-width: 90%; /* Ajuste: Reducir el ancho máximo */
   margin: auto;
 }
 
 .welcome-text h1 {
-  font-size: 2.5em;
+  font-size: 2em; /* Ajuste: Reducir tamaño de fuente */
   margin: 0;
   color: #007acc;
 }
 
 .welcome-text p {
-  font-size: 1.2em;
-  margin: 20px 0;
+  font-size: 1em; /* Ajuste: Reducir tamaño de fuente */
+  margin: 15px 0; /* Ajuste: Aumentar el margen inferior */
   color: white;
 }
 
 /* Estilo para la sección Sobre Mí */
 #about {
   background: #fff;
-  padding: 60px 20px;
+  padding: 40px 20px; /* Ajuste: Reducir padding */
   margin-top: 15px;
   margin-bottom: 50px;
   box-shadow: 0px 0px 10px 10px #fff;
@@ -94,8 +95,8 @@ section {
 
 #about img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px; /* Ajuste: Reducir tamaño de imagen */
+  height: 120px;
   margin-right: 20px;
   object-fit: cover;
 }
@@ -103,13 +104,14 @@ section {
 .about-text {
   max-width: 600px;
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Ajuste: Reducir tamaño de fuente */
+  line-height: 1.4; /* Ajuste: Aumentar interlineado */
 }
 
 /* Estilo para la sección de habilidades */
 #skills {
   background-color: #fff;
-  padding: 60px 20px;
+  padding: 40px 20px; /* Ajuste: Reducir padding */
   box-shadow: 0px 0px 10px 10px #fff;
   width: 100%;
   display: flex;
@@ -118,8 +120,8 @@ section {
 #skills h2 {
   text-align: center;
   color: #007acc;
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-size: 1.5em; /* Ajuste: Reducir tamaño de fuente */
+  margin-bottom: 15px; /* Ajuste: Reducir margen inferior */
 }
 
 .skills-container {
@@ -132,14 +134,14 @@ section {
 
 .skills-category {
   flex: 1;
-  min-width: 220px;
+  min-width: 180px; /* Ajuste: Reducir ancho mínimo */
   margin-bottom: 20px;
 }
 
 .skills-category h3 {
   color: #333;
-  font-size: 1.4em;
-  margin-bottom: 10px;
+  font-size: 1.2em; /* Ajuste: Reducir tamaño de fuente */
+  margin-bottom: 8px; /* Ajuste: Reducir margen inferior */
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
 }
@@ -152,7 +154,7 @@ section {
 .skills-category ul li {
   background-color: #f9f9f9;
   color: #333;
-  padding: 10px;
+  padding: 8px; /* Ajuste: Reducir padding */
   margin: 5px 0;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -168,9 +170,9 @@ section {
 #contact {
   background: #fff;
   box-shadow: 0px 0px 10px 10px #fff;
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 50px auto;
+  padding: 40px 20px; /* Ajuste: Reducir padding */
+  max-width: 800px; /* Ajuste: Reducir ancho máximo */
+  margin: 30px auto; /* Ajuste: Centrar la sección de contacto */
   border-radius: 8px;
   display: flex;
 }
@@ -178,8 +180,8 @@ section {
 #contact h2 {
   text-align: center;
   color: #007acc;
-  margin-bottom: 20px;
-  margin-right: 50px;
+  font-size: 1.5em; /* Ajuste: Reducir tamaño de fuente */
+  margin-bottom: 15px; /* Ajuste: Reducir margen inferior */
 }
 
 .contact-container {
@@ -187,11 +189,12 @@ section {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   align-items: center;
-  font-size: 1.1rem;
-  margin-left: 250px;
+  font-size: 1rem; /* Ajuste: Reducir tamaño de fuente */
+  margin-left: 0; /* Ajuste: Eliminar margen izquierdo */
 }
 
-#contact p, #contact a {
+#contact p,
+#contact a {
   margin: 0;
   color: #333;
 }
@@ -216,62 +219,39 @@ footer {
 
 /* Adaptaciones responsivas */
 @media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #about img {
-    margin: 0 auto 20px;
-  }
-
   .skills-container {
-    flex-direction: column;
+    flex-direction: column; /* Cambiar a dirección de columna para habilidades en dispositivos pequeños */
   }
 
   .skills-category {
-    margin-bottom: 20px;
-  }
-
-  #contact {
-    padding: 30px 20px; 
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr;
-    text-align: center; 
-    margin-left: 0; 
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+    margin-bottom: 15px; /* Ajustar el margen inferior de las categorías de habilidades en dispositivos pequeños */
   }
 }
 
 @media (max-width: 480px) {
   .welcome-text h1 {
-    font-size: 2em;
+    font-size: 1.8em; /* Reducir el tamaño del título de bienvenida para dispositivos muy pequeños */
   }
 
   .welcome-text p {
-    font-size: 1em;
+    font-size: 0.9em; /* Reducir el tamaño del texto de bienvenida para dispositivos muy pequeños */
+    margin: 10px 0; /* Ajustar el margen inferior del párrafo */
   }
 
   #skills h2 {
-    font-size: 1.5em;
+    font-size: 1.3em; /* Reducir el tamaño del título de habilidades para dispositivos muy pequeños */
   }
 
   .skills-category h3 {
-    font-size: 1.2em;
+    font-size: 1.1em; /* Reducir el tamaño del título de cada categoría de habilidades para dispositivos muy pequeños */
   }
 
   .skills-category ul li {
-    padding: 8px;
+    padding: 6px; /* Reducir el padding de los elementos de la lista de habilidades para dispositivos muy pequeños */
   }
 
   #contact {
-    font-size: 1rem;
-    padding: 30px 20px;
+    font-size: 0.9rem; /* Reducir el tamaño de fuente de la sección de contacto para dispositivos muy pequeños */
+    padding: 20px; /* Reducir el padding de la sección de contacto para dispositivos muy pequeños */
   }
 }
