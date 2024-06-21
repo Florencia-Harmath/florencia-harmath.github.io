@@ -227,19 +227,20 @@ section {
 #contact {
   background: #fff;
   box-shadow: 0px 0px 10px 10px #fff;
-  padding: 40px 20px; 
-  max-width: 800px; 
+  padding: 40px 20px;
+  max-width: 800px;
   margin: 30px auto;
   border-radius: 8px;
   display: flex;
+  flex-direction: column; /* Cambio a columna en pantallas pequeñas */
+  align-items: center; /* Centra los elementos */
 }
 
 #contact h2 {
   text-align: center;
   color: #007acc;
-  font-size: 1.5em; 
-  margin-bottom: 15px; 
-  margin-right: 100px;
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
 .contact-container {
@@ -247,7 +248,7 @@ section {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   align-items: center;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
 
 #contact p,
@@ -263,6 +264,30 @@ section {
 
 #contact a:hover {
   color: #007acc;
+}
+
+/* Estilo adicional para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos medianos */
+    text-align: center; /* Centra el texto */
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 20px; /* Reduce el padding general */
+  }
+
+  #contact h2 {
+    font-size: 1.3em; /* Reduce el tamaño del título */
+    margin-right: 0; /* Elimina el margen derecho */
+  }
+
+  .contact-container {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    gap: 8px; /* Reduce el espacio entre los elementos */
+  }
 }
 
 /* Estilo para el pie de página */
