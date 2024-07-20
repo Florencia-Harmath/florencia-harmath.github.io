@@ -189,6 +189,10 @@ footer {
 
 /* Estilos para pantallas más grandes */
 @media (min-width: 769px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   nav ul {
     flex-direction: row;
     justify-content: center;
