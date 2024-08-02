@@ -80,7 +80,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .skills-category {
@@ -95,6 +95,7 @@ section {
   color: #fff;
   margin-bottom: 15px;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .skills ul {
@@ -189,6 +190,6 @@ section {
 
 @media (max-width: 768px) {
   .skills-category {
-      width: 90%;
+      width: 50%;
   }
 }
