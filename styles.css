@@ -113,51 +113,42 @@ section {
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .project {
-  padding: 30px;
+  padding: 20px; 
   border-radius: 10px;
   border: solid white 0.5px;
   box-shadow: 0 2px 4px white;
-  margin-bottom: 40px;
+  margin-bottom: 30px; 
 }
 
 .project img {
-  width: 100%;
+  width: 40%;
+  height: 40%;
   border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.project:hover {
-  border: solid #ff69b4 0.5px;
-  cursor: pointer;
-  transition: 0.5s;
+  margin-bottom: 15px; 
 }
 
 .project h3 {
   color: #ff69b4; 
-  margin-bottom: 15px;
-  font-size: 1.5rem;
+  margin-bottom: 10px; /* Reduce el margen inferior del título */
+  font-size: 1.3rem; /* Disminuye el tamaño de la fuente del título */
 }
 
 .project p {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  margin-bottom: 8px; /* Reduce el margen inferior del párrafo */
+  font-size: 1rem; /* Disminuye el tamaño de la fuente del texto */
+  line-height: 1.5; /* Ajusta la altura de línea */
   color: #fff;
-}
-
-.project ul {
-  list-style: none;
-  padding: 0;
 }
 
 .project ul li {
   color: white;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 8px; /* Reduce el padding de los elementos de la lista */
+  margin-bottom: 8px; /* Reduce el margen inferior de los elementos de la lista */
 }
 
 .project a {
@@ -165,7 +156,7 @@ section {
   color: #ff00ff; 
   font-weight: bold;
   transition: color 0.3s;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Disminuye el tamaño de la fuente del enlace */
 }
 
 .project a:hover {
