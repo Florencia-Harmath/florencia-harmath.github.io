@@ -14,13 +14,13 @@
     <header>
         <nav>
             <ul>
-              <li>
-                <img src="./img/img-header.png" alt="Foto de perfil" class="profile-img" />
-            </li>
-                <li><a href="#about">SOBRE MÍ</a></li>
-                <li><a href="#skills">HABILIDADES</a></li>
-                <li><a href="#projects">MIS PROYECTOS</a></li>
-                <li><a href="#contact">CONTACTO</a></li>
+                <li>
+                    <img src="./img/img-header.png" alt="Foto de perfil de Florencia Harmath" class="profile-img" />
+                </li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Mis Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,10 +28,9 @@
     <main>
         <section id="about">
             <h2>Sobre Mí</h2>
-            <div class="about-container"></div>
-            <div class="about-text2">
+            <div class="about-text">
                 <p>
-                    ¡Hola! Soy Florencia Harmath, desarrolladora web backend. Trabajé para "El placard de mi bebot" en la construcción de una plataforma para organizar ferias presenciales para que los usuarios puedan inscribirse, donde realicé la API documentándola en Swagger. Este proyecto me ha permitido profundizar en el uso de TypeScript, NestJS y TypeORM, así como la implementación de Git, GitHub y trabajo en equipo. También trabajé como Teacher Assistant en la academia Soy Henry, donde tuve la oportunidad de guiar a los estudiantes en su camino hacia convertirse en desarrolladores full-stack, brindando mis conocimientos sobre el Backend.
+                    ¡Hola! Soy Florencia Harmath, desarrolladora web backend. Trabajé para "El placard de mi bebot" en la construcción de una plataforma para organizar ferias presenciales para que los usuarios puedan inscribirse, donde realicé la API documentándola en Swagger. Este proyecto me ha permitido profundizar en el uso de TypeScript, NestJS y TypeORM, así como en la implementación de Git, GitHub y trabajo en equipo. También trabajé como Teacher Assistant en la academia Soy Henry, donde tuve la oportunidad de guiar a los estudiantes en su camino hacia convertirse en desarrolladores full-stack, brindando mis conocimientos sobre el Backend.
                 </p>
             </div>
         </section>
@@ -46,6 +45,7 @@
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>TypeScript</li>
+                        <li>Golang</li>
                     </ul>
                 </div>
                 <div class="skills-category">
@@ -64,6 +64,7 @@
                         <li>MongoDB</li>
                         <li>TypeORM</li>
                         <li>Mongoose</li>
+                        <li>Gorm</li>
                     </ul>
                 </div>
                 <div class="skills-category">
@@ -79,7 +80,6 @@
                         <li>Git</li>
                         <li>Jira</li>
                         <li>Slack</li>
-                        <li>Scrum</li>
                     </ul>
                 </div>
                 <div class="skills-category">
@@ -92,57 +92,78 @@
         </section>
 
         <section id="projects">
-            <h2>Proyectos</h2>
+            <h2>Proyectos NODEJS</h2>
             <div class="projects-container">
                 <div class="project">
-                    <h3>SERVIDOR DE ECOMMERCE</h3>
+                    <h3>Servidor de Ecommerce</h3>
                     <p>
                         API Rest de ecommerce realizada con NestJS, TypeScript, TypeORM, PostgreSQL.
                     </p>
                     <div class="project-section">
                         <p>
-                            El proyecto maneja rutas públicas y privadas. Manejo de roles users y admin.
+                            El proyecto maneja rutas públicas y privadas. Manejo de roles de users y admin.
                         </p>
-                        <h4>REGLAS DE NEGOCIO</h4>
+                        <h4>Reglas de Negocio</h4>
                         <ul>
-                            <li>PRODUCTOS: El usuario no registrado puede visualizar los productos.</li>
-                            <li>REGISTRO: El usuario puede registrarse en el sistema, utilizo Bcrypt para la encriptación de las contraseñas.</li>
-                            <li>INICIO DE SESIÓN: El usuario puede iniciar sesión, utilizo JWT para el manejo de tokens.</li>
-                            <li>USUARIO: El usuario registrado puede visualizar y modificar su información y eliminar su perfil.</li>
-                            <li>CARRITO DE COMPRAS: El usuario puede agregar productos al carrito de compras.</li>
-                            <li>ORDENES: El usuario puede visualizar sus órdenes con el detalle de los productos comprados y el precio total.</li>
-                            <li>PRODUCTOS: El usuario registrado como administrador puede registrar, editar y eliminar productos.</li>
-                            <li>USUARIOS: El usuario registrado como administrador puede visualizar y eliminar usuarios.</li>
+                            <li>Productos: El usuario no registrado puede visualizar los productos.</li>
+                            <li>Registro: El usuario puede registrarse en el sistema. Utilizo Bcrypt para la encriptación de las contraseñas.</li>
+                            <li>Inicio de Sesión: El usuario puede iniciar sesión. Utilizo JWT para el manejo de tokens.</li>
+                            <li>Usuario: El usuario registrado puede visualizar y modificar su información y eliminar su perfil.</li>
+                            <li>Carrito de Compras: El usuario puede agregar productos al carrito de compras.</li>
+                            <li>Órdenes: El usuario puede visualizar sus órdenes con el detalle de los productos comprados y el precio total.</li>
+                            <li>Productos: El usuario registrado como administrador puede registrar, editar y eliminar productos.</li>
+                            <li>Usuarios: El usuario registrado como administrador puede visualizar y eliminar usuarios.</li>
                         </ul>
-                        <img src="./img/proyecto-ecommerce.png" alt="">
+                        <img src="./img/proyecto-ecommerce.png" alt="Captura del proyecto de ecommerce" />
                     </div>
-                    <a href="https://github.com/Florencia-Harmath/Ecommerce-backend">Ver proyecto en GitHub</a>
+                    <a href="https://github.com/Florencia-Harmath/Ecommerce-backend" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub</a>
                 </div>
 
                 <div class="project">
-                    <h3>TURNERO DIGITAL</h3>
+                    <h3>Turnero Digital</h3>
                     <p>
-                        Proyecto FULLSTACK realizado con ExpressJS, TypeScript, TypeORM, PostgreSQL.
+                        Proyecto Fullstack realizado con ExpressJS, TypeScript, TypeORM, PostgreSQL.
                     </p>
                     <div class="project-section">
                         <p>
-                            Este proyecto permite a los usuarios registrarse, iniciar sesión y también, solicitar y cancelar turnos. Posee una vista de administrador que permite visualizar todos los usuarios con sus turnos, y puede bloquear y desbloquearlos.
+                            Este proyecto permite a los usuarios registrarse, iniciar sesión, y también, solicitar y cancelar turnos. Posee una vista de administrador que permite visualizar todos los usuarios con sus turnos, y puede bloquear y desbloquearlos.
                         </p>
-                        <h4>FUNCIONALIDADES DE USUARIOS</h4>
+                        <h4>Funcionalidades de Usuarios</h4>
                         <ul>
                             <li>Registrarse e iniciar sesión. Utilizo nodemailer para la confirmación de correo.</li>
                             <li>Visualizar y modificar su perfil, pudiendo subir una foto.</li>
                             <li>Solicitar un turno y cancelarlo.</li>
                         </ul>
-                        <h4>FUNCIONALIDADES DE ADMINISTRADOR</h4>
+                        <h4>Funcionalidades de Administrador</h4>
                         <ul>
                             <li>Visualizar todos los usuarios con sus turnos.</li>
                             <li>Bloquear y desbloquear usuarios.</li>
                             <li>Agregar servicios.</li>
                         </ul>
-                        <img src="./img/turnero.png" alt="">
+                        <img src="./img/turnero.png" alt="Captura del proyecto turnero digital" />
                     </div>
-                    <a href="https://github.com/Florencia-Harmath/digitalTurner">Ver proyecto en GitHub</a>
+                    <a href="https://github.com/Florencia-Harmath/digitalTurner" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub</a>
+                </div>
+            </div>
+
+            <h2>Proyectos Golang</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Task Manager</h3>
+                    <p>
+                        Aplicación de administración de tareas Backend realizada con Golang, PostgreSQL, Gorm, JWT, Bcrypt.
+                    </p>
+                    <div class="project-section">
+                        <h4>Funcionalidades</h4>
+                        <ul>
+                            <li>Registrarse e iniciar sesión.</li>
+                            <li>Rutas públicas y privadas.</li>
+                            <li>Manejo de tokens.</li>
+                            <li>CRUD completo de las tareas.</li>
+                        </ul>
+                        <img src="./img/Golang.png" alt="Captura del proyecto Task Manager en Golang" />
+                    </div>
+                    <a href="https://github.com/Florencia-Harmath/TaskManager" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub</a>
                 </div>
             </div>
         </section>
@@ -151,23 +172,16 @@
             <h2>Contacto</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <p><strong>Correo:</strong></p>
-                    <a href="mailto:florharmath04@gmail.com">florharmath04@gmail.com</a>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/florencia-harmath/" target="_blank" rel="noopener noreferrer">Florencia Harmath</a>
                 </div>
-
                 <div class="contact-info">
-                    <p><strong>LinkedIn:</strong></p>
-                    <a href="https://www.linkedin.com/in/florencia-harmath-5a698a275/" target="_blank">Florencia Harmath</a>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Florencia-Harmath" target="_blank" rel="noopener noreferrer">Florencia Harmath</a>
                 </div>
-
                 <div class="contact-info">
-                    <p><strong>GitHub:</strong></p>
-                    <a href="https://github.com/Florencia-Harmath" target="_blank">Florencia-Harmath</a>
-                </div>
-
-                <div class="contact-info">
-                    <p><strong>Curriculum:</strong></p>
-                    <a href="https://github.com/Florencia-Harmath/curriculum/blob/main/CV%20Florencia%20Harmath.pdf" target="_blank">Accedé a mi CV</a>
+                    <h3>Email</h3>
+                    <a href="mailto:florharmath04@gmail.com" target="_blank" rel="noopener noreferrer">florharmath04@gmail.com</a>
                 </div>
             </div>
         </section>
