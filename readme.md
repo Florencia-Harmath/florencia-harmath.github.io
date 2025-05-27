@@ -21,12 +21,6 @@ En este repositorio encontrarás:
 - **Google Fonts** (fuentes personalizadas)
 - **GitHub Pages** (para la implementación y hospedaje del sitio web)
 
-
-## Cómo Ver el Sitio Web
-Puedes ver mi sitio web en vivo visitando Florencia Harmath.
-
-![Registro de Usuario](./img/Captura%20de%20pantalla%202024-06-21%20195030.png)
-
 ## Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas sugerir mejoras, correcciones de errores o nuevas características, no dudes en enviar un pull request.
 
